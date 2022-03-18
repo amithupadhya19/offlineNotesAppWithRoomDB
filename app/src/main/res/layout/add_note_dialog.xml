@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:elevation="5dp"
+    android:padding="5dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="5dp">
+        <EditText
+            android:layout_margin="5dp"
+            android:id="@+id/titleEdittext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/textinputlayouts"
+            android:hint="enter task title"
+            android:textColorHint="#000"/>
+        <EditText
+            android:layout_margin="5dp"
+            android:id="@+id/detailEdittext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/textinputlayouts"
+            android:hint="enter task detail"
+            android:textColorHint="#000"/>
+        <ImageView
+            android:layout_margin="5dp"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:id="@+id/chooseImage"
+            android:background="#ddd"/>
+        <TextView
+            android:id="@+id/imagepickertv"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="please click here to choose an image"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#00f"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addNoteDialogButton"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/buttonlayout"
+            android:text="add note"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
