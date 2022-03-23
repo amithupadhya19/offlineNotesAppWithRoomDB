@@ -39,7 +39,7 @@ class SignUp : AppCompatActivity() {
 
 
         val passwordField:EditText=findViewById(R.id.SIgnupPasswordField)
-        val image:ImageView=findViewById(R.id.iv)
+
 
         val signupButton:Button=findViewById(R.id.SignupButton)
         signupButton.setOnClickListener {
@@ -78,8 +78,8 @@ class SignUp : AppCompatActivity() {
             }
             else{
                 val pic:Bitmap= BitmapFactory.decodeResource(resources,R.drawable.tree)
-                val drawable =image.drawable as BitmapDrawable
-                val bitmap=drawable.bitmap
+
+
                 val note=note("have fun","don't forget to have fun",pic,username)
                 dao.insertUser(user(username,email,phoneno,password))
                 dao.insertNote(note)
